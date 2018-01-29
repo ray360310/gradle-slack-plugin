@@ -13,7 +13,7 @@ repositories {
 }
 
 group = 'com.github.Mindera'
-version = '1.0.7'
+version = '1.0.7.1'
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
@@ -47,13 +47,13 @@ uploadArchives {
             pom.project {
                 name 'gradle-slack-plugin'
                 packaging 'jar'
-                description 'Gradle plugin to send messages to Slack after each build '
-                url 'https://github.com/Mindera/gradle-slack-plugin'
+                description 'Gradle plugin to send messages to Slack after each build , remove slack-only. I want to post to Mattermost.'
+                url 'https://github.com/ray360310/gradle-slack-plugin'
 
                 scm {
-                    connection 'scm:git@github.com:Mindera/gradle-slack-plugin.git'
-                    developerConnection 'scm:git@github.com:Mindera/gradle-slack-plugin.git'
-                    url 'https://github.com/Mindera/gradle-slack-plugin'
+                    connection 'scm:git@github.com:ray360310/gradle-slack-plugin.git'
+                    developerConnection 'scm:git@github.com:ray360310/gradle-slack-plugin.git'
+                    url 'https://github.com/ray360310/gradle-slack-plugin'
                 }
 
                 licenses {
@@ -66,7 +66,7 @@ uploadArchives {
                 developers {
                     developer {
                         id 'joaoprudencio'
-                        name 'Joao Prudencio'
+                        name 'Former developer: Joao Prudencio'
                         email 'joao.prudencio@mindera.com'
                     }
                 }
