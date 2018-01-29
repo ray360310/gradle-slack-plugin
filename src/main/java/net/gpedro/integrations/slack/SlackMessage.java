@@ -31,7 +31,7 @@ public class SlackMessage {
     }
 
     public SlackMessage(String username, String text) {
-        this(null, username, text);
+        this("declo", username, text);
     }
 
     public SlackMessage(String channel, String username, String text) {
