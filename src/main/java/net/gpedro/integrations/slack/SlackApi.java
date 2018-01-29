@@ -10,6 +10,8 @@ import java.net.URLEncoder;
 
 import com.google.gson.JsonObject;
 
+import javax.net.ssl.HttpsURLConnection;
+
 /**
  * Developed by gpedro https://github.com/gpedro/slack-webhook
  */
@@ -44,17 +46,17 @@ public class SlackApi {
 
     /**
      * Send request to WebService
-     * 
+     *
      * @param message
      * @return String response
      */
     private String send(JsonObject message) {
         URL url;
-        HttpURLConnection connection = null;
+        HttpsURLConnection connection = null;
         try {
             // Create connection
             url = new URL(this.service);
-            connection = (HttpURLConnection) url.openConnection();
+            connection = (HttpsURLConnection) url.openConnection();
             connection.setRequestMethod("POST");
             connection.setConnectTimeout(5000);
             connection.setUseCaches(false);
